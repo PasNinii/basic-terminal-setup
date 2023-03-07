@@ -1,5 +1,5 @@
 sudo apt-get update -y
-sudo add-apt-repository ppa:neovim-ppa/stable -y
+sudo add-apt-repository ppa:neovim-ppa/unstable -y
 
 sudo apt-get install curl -y
 sudo apt-get install git -y
@@ -17,6 +17,12 @@ sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
 sudo update-alternatives --config editor
 
 git config --global core.editor "vim"
+
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+
+git clone https://github.com/github/copilot.vim.git \
+  ~/.vim/pack/github/start/copilot.vim
 
 sudo apt-get install zsh -y
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
