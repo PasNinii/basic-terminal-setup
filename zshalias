@@ -1,10 +1,4 @@
 alias v="vim ."
-alias vdev="cd $HOME/spinergie/spinergie/ && v"
-alias vdata="cd $HOME/spinergie/spindata/ && v"
-alias vinfra="cd $HOME/spinergie/infra/ && v"
-
-alias cinit="bash $HOME/spinergie/spinergie/scripts/dockers/docker-install/init_image.sh"
-alias cclean="bash $HOME/spinergie/spinergie/scripts/dockers/docker-install/clean_container.sh"
 
 alias z="cd $HOME && vim .zshrc"
 alias vc="cd $HOME/.config/nvim && v"
