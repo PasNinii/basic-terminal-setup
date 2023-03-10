@@ -53,7 +53,6 @@ local servers = {
   },
 }
 
-
 -- Setup mason so it can manage external tooling
 require('mason').setup()
 
@@ -119,3 +118,13 @@ cmp.setup {
   },
 }
 
+require('lspconfig').lua_ls.setup {
+  settings = {
+    Lua = {
+      diagnostics = {
+        -- Get the language server to recognize the `vim` global
+        globals = {'vim'},
+      },
+    },
+  },
+}
