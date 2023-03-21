@@ -6,6 +6,7 @@ sudo apt-get install build-essential -y
 sudo apt-get install software-properties-common -y
 sudo apt-get install neovim -y
 sudo apt-get install vim-gtk -y
+sudo apt-get install xclip -y
 sudo apt-get install ripgrep -y
 
 sudo update-alternatives --install /usr/bin/vi vi /usr/bin/nvim 60
