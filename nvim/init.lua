@@ -115,6 +115,7 @@ require('lazy').setup({
     'nvim-treesitter/nvim-treesitter',
     dependencies = {
       'nvim-treesitter/nvim-treesitter-textobjects',
+      'HiPhish/nvim-ts-rainbow2'
     },
     config = function()
       pcall(require('nvim-treesitter.install').update { with_sync = true })
@@ -139,7 +140,14 @@ require('lazy').setup({
       'nvim-tree/nvim-web-devicons', -- optional, for file icons
     },
     tag = 'nightly'                  -- optional, updated every week. (see issue #1193)
-  }
+  },
+
+  {
+    'sindrets/diffview.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim',
+    },
+  },
 }, {})
 
 
