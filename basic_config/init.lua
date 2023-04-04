@@ -17,7 +17,7 @@ vim.opt.rtp:prepend(lazypath)
 --  You can also configure plugins after the setup call,
 --    as they will be available in your neovim runtime.
 require('lazy').setup({
-  -- NOTE: First, some plugins that don't require any configuration
+  'nvim-lua/plenary.nvim',
 
   -- Git related plugins
   'tpope/vim-fugitive',
@@ -133,6 +133,11 @@ require('lazy').setup({
   {
     'theprimeagen/harpoon'
   },
+
+  {
+    'nvim-tree/nvim-web-devicons',
+  },
+
 
   {
     'nvim-tree/nvim-tree.lua',
