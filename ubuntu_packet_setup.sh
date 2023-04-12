@@ -1,20 +1,9 @@
-sudo apt-get update -y
-sudo add-apt-repository ppa:neovim-ppa/unstable -y
-
-sudo apt-get install curl -y
-sudo apt-get install build-essential -y
-sudo apt-get install software-properties-common -y
-sudo apt-get install neovim -y
-sudo apt-get install vim-gtk -y
-sudo apt-get install xclip -y
 sudo apt-get install ripgrep -y
 
 sudo update-alternatives --install /usr/bin/vi vi /usr/bin/nvim 60
 sudo update-alternatives --config vi
 sudo update-alternatives --install /usr/bin/vim vim /usr/bin/nvim 60
 sudo update-alternatives --config vim
-sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
-sudo update-alternatives --config editor
 
 rm -rf ~/.config/nvim
 rm -rf ~/.local/share/nvim

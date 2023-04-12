@@ -1,9 +1,33 @@
 local overrides = require "custom.configs.overrides"
+
 ---@type NvPluginSpec[]
 local plugins = {
-  { "HiPhish/nvim-ts-rainbow2", lazy = false },
-  { "github/copilot.vim", lazy = false },
   -- Override plugin definition options
+  {
+    "HiPhish/nvim-ts-rainbow2",
+    lazy = false,
+  },
+
+  {
+    "github/copilot.vim",
+    lazy = false,
+  },
+
+  {
+    "tpope/vim-fugitive",
+    lazy = false,
+    config = function()
+      require("custom.configs.fugitive")
+    end
+  },
+
+  {
+    "lewis6991/gitsigns.nvim",
+    opts = {
+      current_line_blame = true,
+    }
+  },
+
   {
     "neovim/nvim-lspconfig",
     dependencies = {
@@ -45,6 +69,12 @@ local plugins = {
       require("better_escape").setup()
     end,
   },
+
+  -- To make a plugin not be loaded
+  -- {
+  --   "NvChad/nvim-colorizer.lua",
+  --   enabled = false
+  -- },
 }
 
 return plugins

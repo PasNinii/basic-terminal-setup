@@ -2,26 +2,32 @@ local M = {}
 
 M.treesitter = {
   ensure_installed = {
-    "vim",
-    "lua",
-    "html",
+    "bash",
+    "comment",
     "css",
+    "dockerfile",
+    "dot",
+    "html",
     "javascript",
-    "typescript",
-    "tsx",
-    "c",
+    "jsdoc",
+    "json",
+    "lua",
     "markdown",
     "markdown_inline",
+    "php",
+    "phpdoc",
+    "python",
+    "scss",
+    "sql",
+    "typescript",
+    "tsx",
+    "yaml",
   },
   indent = {
     enable = true,
-    -- disable = {
-    --   "python"
-    -- },
-  },
-  rainbow = {
-    enable = true,
-    extended_mode = true,
+    disable = {
+      "python"
+    },
   },
 }
 
@@ -34,9 +40,10 @@ M.mason = {
     -- web dev stuff
     "css-lsp",
     "html-lsp",
+    "angular-language-server",
     "typescript-language-server",
-    "deno",
     "prettier",
+    "intelephense",
   },
 }
 

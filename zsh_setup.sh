@@ -1,1 +1,1 @@
-echo -e source $HOME/workspace/nvim/zshalias >> ~/.zshrc
+echo -e source $HOME/workspace/basic-terminal-setup/zshalias >> ~/.zshrc
