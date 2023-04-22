@@ -57,6 +57,14 @@ local plugins = {
   },
 
   {
+    "nvim-treesitter/nvim-treesitter-context",
+    lazy=false,
+    config = function()
+      require("treesitter-context").setup()
+    end,
+  },
+
+  {
     "nvim-tree/nvim-tree.lua",
     opts = overrides.nvimtree,
   },

@@ -6,20 +6,13 @@ local lspconfig = require "lspconfig"
 -- if you just want default config for the servers then put them in a table
 local servers = { 
   "angularls",
-  "bashls",
   "cssls",
-  "dockerls",
-  "docker_compose_language_service",
-  "dotls",
+  "html",
   "eslint",
   "intelephense",
-  "jsonls",
   "lua_ls",
-  "marksman",
-  "pylsp",
-  "sqlls",
+  "pyright",
   "tsserver",
-  "yamlls",
 }
 
 for _, lsp in ipairs(servers) do
@@ -28,6 +21,3 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
-
--- 
--- lspconfig.pyright.setup { blabla}
