@@ -17,3 +17,4 @@ git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 
 sudo apt-get install zsh -y
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
