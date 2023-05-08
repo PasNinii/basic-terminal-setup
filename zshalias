@@ -1,5 +1,5 @@
-alias v="vim ."
-alias z="cd $HOME && vim .zshrc"
+alias v="nvim ."
+alias z="cd $HOME && nvim .zshrc"
 alias vc="cd $HOME/.config/nvim && v"
 alias vn="cd $HOME/workspace/basic-terminal-setup && v"
 
