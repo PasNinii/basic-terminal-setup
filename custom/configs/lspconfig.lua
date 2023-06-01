@@ -5,7 +5,13 @@ local lspconfig = require "lspconfig"
 
 -- if you just want default config for the servers then put them in a table
 local servers = {
+  "angularls",
+  "cssls",
+  "eslint",
+  "intelephense",
   "lua_ls",
+  "pyright",
+  "tsserver",
 }
 
 for _, lsp in ipairs(servers) do
