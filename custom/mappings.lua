@@ -1,19 +1,20 @@
----@type MappingsTable
 local M = {}
 
 M.general = {
-  n = {
-    [";"] = { ":", "enter command mode", opts = { nowait = true } },
+  v = {
+    ["J"] = { ":m '>+1<CR>gv=gv" },
+    ["K"] = { ":m '<-2<CR>gv=gv" },
+    ["n"] = { "nzzzv" },
+    ["N"] = { "Nzzzv" },
+    ["<leader>y"] = { "[[\"+y]]" },
   },
+  n = {
+    ["<leader>y"] = { "[[\"+y]]" },
+    ["<leader>Y"] = { "[[\"+Y]]" },
+  },
+  i = {
+    ["<C-c>"] = { "<Esc>" },
+  }
 }
-
--- more keybinds!
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
-vim.keymap.set("n", "n", "nzzzv")
-vim.keymap.set("n", "N", "Nzzzv")
-vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
-vim.keymap.set("n", "<leader>Y", [["+Y]])
-vim.keymap.set("i", "<C-c>", "<Esc>")
 
 return M
