@@ -5,6 +5,13 @@ local plugins = {
       current_line_blame = true,
     },
   },
+  {
+    "tpope/vim-fugitive",
+    lazy = false,
+    config = function()
+      require("custom.configs.fugitive")
+    end
+  },
 }
 
 return plugins
