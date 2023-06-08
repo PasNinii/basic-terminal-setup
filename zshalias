@@ -1,6 +1,0 @@
-alias v="nvim ."
-alias z="cd $HOME && nvim .zshrc"
-alias vc="cd $HOME/.config/nvim && v"
-alias vn="cd $HOME/workspace/basic-terminal-setup && v"
-
-alias lla="ls -la"
