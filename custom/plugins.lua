@@ -33,6 +33,10 @@ local plugins = {
       require("custom.configs.fugitive")
     end
   },
+  {
+    "github/copilot.vim",
+    lazy = false,
+  }
 }
 
 return plugins

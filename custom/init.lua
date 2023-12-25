@@ -1,9 +1,9 @@
 vim.opt.nu = true
 vim.opt.relativenumber = true
+vim.opt.guicursor=""
 
 vim.opt.expandtab = true
 vim.opt.smartindent = true
-
 vim.opt.wrap = false
 
 vim.opt.swapfile = false
@@ -36,3 +36,6 @@ autocmd('TextYankPost', {
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 25
+
+vim.g.copilot_assume_mapped = true
+
