@@ -36,6 +36,10 @@ local plugins = {
   {
     "github/copilot.vim",
     lazy = false,
+  },
+  {
+    "nvim-treesitter/nvim-treesitter-angular",
+    lazy=false
   }
 }
 
