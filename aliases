@@ -1,0 +1,16 @@
+# generics aliases
+alias rm="rm -i"
+alias mv="mv -i"
+alias cp="cp -i"
+alias pullall="ls | xargs -I{} git -C {} pull"
+
+
+# git aliases
+alias gs="git status"
+alias gc="git checkout"
+alias gp="git pull"
+alias gcb="git checkout -b"
+alias gcm="git checkout master -- "
+alias ghc="gh copilot explain"
+
+
