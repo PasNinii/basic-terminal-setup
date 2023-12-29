@@ -11,6 +11,8 @@ alias gs="git status"
 
 alias ga="git add"
 alias gaa="git add ."
+alias grs="git restore --staged"
+alias gres="git checkout master --"
 alias gcm="git commit -m"
 alias gcam="git commit -am"
 
@@ -24,6 +26,5 @@ alias gbm="git branch -m"
 
 alias ghc="gh copilot explain"
 
-# required within docker for comment transparent background
 export TERM=screen-256color
 export SHELL=/usr/bin/zsh
