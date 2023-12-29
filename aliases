@@ -13,4 +13,5 @@ alias gcb="git checkout -b"
 alias gcm="git checkout master -- "
 alias ghc="gh copilot explain"
 
-
+# required within docker for comment transparent background
+export TERM=screen-256color
