@@ -13,5 +13,13 @@ git clone --depth 1 "https://github.com/zsh-users/zsh-autosuggestions.git" $HOME
 git clone --depth 1 "https://github.com/marlonrichert/zsh-autocomplete.git" $HOME/.oh-my-zsh/custom/plugins/zsh-autocomplete
 git clone --depth 1 "https://github.com/zsh-users/zsh-history-substring-search" $HOME/.oh-my-zsh/custom/plugins/zsh-history-substring-search
 
+# plugins=(
+#   git
+#   zsh-autocomplete
+#   zsh-autosuggestions
+#   zsh-syntax-highlighting
+#   zsh-history-substring-search
+# )
+
 echo source $current_path/term_config.sh >> $HOME/.zshrc
 cp $current_path/tmux.conf $HOME/.tmux.conf
