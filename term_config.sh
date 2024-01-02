@@ -25,8 +25,8 @@ alias gdc.='git diff --cached -M --color-words="."'
 alias ga="git add"
 alias gaa="git add ."
 alias gap='ga -p'
-alias gcm="git commit -m"
-alias gcam="git commit -am"
+alias gc="git commit -m"
+alias gcm="git commit --amend"
 
 alias gpl="git pull"
 alias gph="git push"
@@ -39,11 +39,8 @@ alias gbr='git branch -v'
 
 alias ghc="gh copilot explain"
 
-alias gs="git status"
-alias s="git status -sb"
-
 alias gch='git cherry-pick'
-alias gf='git fetch'term
+alias gf='git fetch'
 
 # Helper function.
 git_current_branch() {
@@ -76,6 +73,12 @@ alias gs.='git show --color-words="."'
 
 alias gst='git stash'
 alias gstp='git stash pop'
+
+# Redefine alias. Allow to pass more args to `s`.
+s() {
+  git status -sb "$@"
+  return 0
+}
 
 git-new() {
   [ -d "$1" ] || mkdir "$1" &&
