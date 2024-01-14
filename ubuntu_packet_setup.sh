@@ -21,5 +21,5 @@ git clone --depth 1 "https://github.com/zsh-users/zsh-history-substring-search" 
 #   zsh-history-substring-search
 # )
 
-echo source $current_path/term_config.sh >> $HOME/.zshrc
+echo source $current_path/term_config.sh >>$HOME/.zshrc
 cp $current_path/tmux.conf $HOME/.tmux.conf

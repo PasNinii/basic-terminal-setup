@@ -76,7 +76,5 @@ return {
       autocmd BufWritePost * FormatWrite
       augroup END
     ]])
-
-		vim.keymap.set("n", "<leader>fm", vim.lsp.buf.format, {})
 	end,
 }
