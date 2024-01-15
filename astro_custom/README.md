@@ -1,4 +1,5 @@
 # astronvimconfig
+
 ## gh
 
 ```sh
@@ -9,6 +10,3 @@ $ nvim .git/config
 $ gh auth login --web -h github.com
 $ gh pr list
 ```
-
-
-

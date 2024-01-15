@@ -5,4 +5,8 @@ return {
 		["n"] = { "nzzzv" },
 		["N"] = { "Nzzzv" },
 	},
+	n = {
+		["<C-j>"] = { "<cmd>cnext<CR>zz" },
+		["<C-k>"] = { "<cmd>cprev<CR>zz" },
+	},
 }
