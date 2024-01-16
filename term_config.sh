@@ -105,3 +105,6 @@ alias gpstaging='export PREVIOUS_BRANCH=$(git_current_branch) ; gco -B staging ;
 
 # Create pull-request from command line (uses gh gem).
 alias gpr='gpthis; git pull-request'
+
+# example to kill PID on port 4200
+alias k='printf "%s\n" "kill \$(lsof -Fp -i :4200 | grep -o -P -m1 '\''\d+(?![0-9.])'\'')"'
